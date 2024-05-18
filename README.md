@@ -22,7 +22,7 @@ Before running this application, ensure you have the following installed:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/yourusername/studentapi.git
+git clone [https://github.com/yourusername/studentapi.git](https://github.com/Tirth2742/student-service-API.git)
 cd studentapi
 
 ### 2. Build the Project
