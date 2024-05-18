@@ -107,6 +107,7 @@ public class CsvController {
                 return ResponseEntity.ok("{\"rollNumber\": \"" + record[0] + "\", \"eligible\": \"" + eligibility + "\"}");
             }
         }
+        
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Student not found");
     }
 }
