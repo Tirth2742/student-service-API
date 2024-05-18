@@ -1,3 +1,5 @@
+# student-service-API
+
 # Student API Project
 
 ## Overview
@@ -22,7 +24,8 @@ Before running this application, ensure you have the following installed:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/yourusername/studentapi.git
+git clone https://github.com/Tirth2742/student-service-API.git 
+
 cd studentapi
 
 ### 2. Build the Project
@@ -36,6 +39,7 @@ mvn spring-boot:run
 ### 4. Access the Application
 
 The application will be accessible at http://localhost:8080.
+
 Swagger UI for API documentation can be accessed at http://localhost:8080/swagger-ui.html.
 
 ## Using Swagger UI
@@ -49,7 +53,7 @@ Swagger UI for API documentation can be accessed at http://localhost:8080/swagge
     1,John Doe,88,92,78,96
     2,Jane Smith,85,89,75,94
 
-    note: sample csv file (students_data.csv) has been provided for testing the application
+    note: sample csv file has been provide to test the aplication
 
 5. Click Execute.
 6. Download the updated CSV file from the response section.
@@ -65,7 +69,6 @@ Parameters:
     file (required): The CSV file to be uploaded.
 
 Example Request (using cURL)
-
 curl -X POST "http://localhost:8080/api/csv/upload" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@/path/to/your/students.csv"
 
 ### Response
@@ -74,13 +77,3 @@ curl -X POST "http://localhost:8080/api/csv/upload" -H "accept: application/json
 400 Bad Request: Invalid input or file.
 500 Internal Server Error: Server error while processing the file.
 
-## CSV File Format
-
-The CSV file should have the following columns:
-
-roll number
-student name
-science
-maths
-english
-computer
